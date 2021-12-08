@@ -1,0 +1,20 @@
+local owner = "Gloozzyy"
+local branch = "ViiPer%20Hub"
+local directory = "viiperX"
+
+local function webImport(file)
+    return loadstring(game:HttpGetAsync(("https://raw.githubusercontent.com/%s/%s/main/%s/%s.lua"):format(owner, directory, branch, file)), file .. '.lua')()
+end
+
+if game.Placeid == "2788229376" then
+  --webImport("Universal")
+  print("dahood")
+ end
+elseif game.Placeid == "286090429" then
+  --webImport("Universal")
+  print("arsenal")
+ end
+elseif game.Placeid == "1962086868" then
+  --webImport("Universal")
+  print("tower of hell")
+ end
